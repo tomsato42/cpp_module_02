@@ -15,8 +15,10 @@ OBJ_DIR	 := $(ROOT_DIR)/obj
 IDFLAGS	 := -I$(INC_DIR)
 
 # HERE TO SRC FILES
-SRC := \
-	
+SRC :=	main.cpp\
+	  	Fixed.cpp\
+	  	Point.cpp\
+	  	bsp.cpp\
 
 OBJ := $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRC))
 
