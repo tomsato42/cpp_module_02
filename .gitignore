@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+/obj/*
+/ex00/MyFirstClassInOrthodoxCanonicalForm
+/ex01/TowardsAMoreUsefulFixedPointNumberClass
+/ex02/NowWeReTalking
+/ex03/BSP

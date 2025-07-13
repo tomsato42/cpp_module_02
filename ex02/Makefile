@@ -2,7 +2,7 @@
 NAME		:= NowWeReTalking
 
 CXX		 := c++
-CXXFLAGS	:= -Wall -Wextra -Werror -std=c++98 -pedantic
+CXXFLAGS := -Wall -Wextra -Werror -std=c++98 -pedantic
 OPT		 := -O2
 RM		  := rm -rf
 DEFINE	  := -DDEBUG_MODE=DEBUG_NONE
@@ -15,7 +15,8 @@ OBJ_DIR	 := $(ROOT_DIR)/obj
 IDFLAGS	 := -I$(INC_DIR)
 
 # HERE TO SRC FILES
-SRC := \
+SRC	:=	Fixed.cpp\
+		main.cpp\
 	
 
 OBJ := $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRC))
