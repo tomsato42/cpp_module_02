@@ -7,12 +7,13 @@ Point::Point() : x(Fixed(0)), y(Fixed(0)) {
 Point::Point(const float x, const float y) : x(Fixed(x)), y(Fixed(y)) {
 }
 
-Point::~Point() {}
-
-Point::Point(const Point& other) : x(other.x), y(other.y) {
+Point::~Point() {
 }
 
-Point& Point::operator=(const Point& other) {
+Point::Point(const Point &other) : x(other.x), y(other.y) {
+}
+
+Point &Point::operator=(const Point &other) {
     if (this != &other) {
     }
     return *this;
@@ -35,5 +36,5 @@ Point calcVector(const Point &a, const Point &b) {
 }
 
 float cross(const Point &a, const Point &b) {
-    return (a.getX().toFloat() * b.getY().toFloat() )-  (a.getY().toFloat() * b.getX().toFloat());
+    return (a.getX().toFloat() * b.getY().toFloat()) - (a.getY().toFloat() * b.getX().toFloat());
 }

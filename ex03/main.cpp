@@ -39,11 +39,11 @@ int main() {
     const bool result3 = bsp(a, b, c, point3);
     printLog(point3, result3);
 
-    const Point point4(0.1,0.1);
+    const Point point4(0.1, 0.1);
     const bool result4 = bsp(a, b, c, point4);
     printLog(point4, result4);
 
-    const Point point5(0,0);
+    const Point point5(0, 0);
     const bool result5 = bsp(a, b, c, point5);
     printLog(point5, result5);
 

@@ -64,6 +64,6 @@ void Fixed::cleanUp() {
     data_ = 0;
 }
 
-std::ostream & operator<<(std::ostream &ostream, const Fixed &fixed) {
+std::ostream &operator<<(std::ostream &ostream, const Fixed &fixed) {
     return ostream << fixed.toFloat();
 }

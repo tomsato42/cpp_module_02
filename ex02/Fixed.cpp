@@ -85,7 +85,7 @@ Fixed Fixed::operator/(const Fixed &other) const {
     return fixed;
 }
 
-Fixed & Fixed::operator++() {
+Fixed &Fixed::operator++() {
     data_++;
     return *this;
 }
@@ -96,7 +96,7 @@ Fixed Fixed::operator++(int) {
     return copy;
 }
 
-Fixed & Fixed::operator--() {
+Fixed &Fixed::operator--() {
     data_--;
     return *this;
 }
@@ -107,19 +107,19 @@ Fixed Fixed::operator--(int) {
     return copy;
 }
 
-Fixed & Fixed::min(Fixed &a, Fixed &b) {
+Fixed &Fixed::min(Fixed &a, Fixed &b) {
     return a < b ? a : b;
 }
 
-const Fixed & Fixed::min(const Fixed &a, const Fixed &b) {
+const Fixed &Fixed::min(const Fixed &a, const Fixed &b) {
     return a < b ? a : b;
 }
 
-Fixed & Fixed::max(Fixed &a, Fixed &b) {
+Fixed &Fixed::max(Fixed &a, Fixed &b) {
     return a < b ? b : a;
 }
 
-const Fixed & Fixed::max(const Fixed &a, const Fixed &b) {
+const Fixed &Fixed::max(const Fixed &a, const Fixed &b) {
     return a < b ? b : a;
 }
 
@@ -148,6 +148,6 @@ void Fixed::cleanUp() {
     data_ = 0;
 }
 
-std::ostream & operator<<(std::ostream &ostream, const Fixed &fixed) {
+std::ostream &operator<<(std::ostream &ostream, const Fixed &fixed) {
     return ostream << fixed.toFloat();
 }
